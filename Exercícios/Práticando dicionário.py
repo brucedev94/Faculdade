@@ -1,8 +1,6 @@
+def = frutas
 
-catalogo = {
-    "Paramecia" : "Fruta da mola", "Fruta da lampada"
-    "Zuka Pata no mi" : "Zoan"
-    }
+Lista_Frutas = ["Paramecia", "Zoan", "Logia", "Zoan Mitica"]
 
-print(catalogo["Paramecia"])
-print(type(catalogo))
+print(Lista_Frutas[0])
+print(type(Lista_Frutas))
