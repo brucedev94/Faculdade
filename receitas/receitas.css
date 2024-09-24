@@ -1,0 +1,934 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#base{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    padding: 0;
+    margin: auto;
+}
+
+.img{
+    width: 100%;
+    max-width: 200px;
+}
+
+.quadro {
+    width: 33.33%;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+
+.box-especialidade {
+    margin: 30px 0;
+    padding: 0 30px;
+    text-align: center;
+    border: 8px solid rgb(0, 0, 0);
+    background-color: rgb(228, 133, 56);
+}
+
+#menu-h{
+    list-style: none;
+    display: flex;
+}
+
+.letra-preta{
+    color: black;
+    font-size: 20px;
+}
+
+.letra-branca{
+    color: white;
+    font-size: 20px;
+}
+
+.bg-laranja{
+    background-color: rgb(255, 251, 39);
+    margin: auto;
+}
+
+.bg-preta{
+    background-color: black;
+}
+
+#direitos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.centro-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nome-receitas {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.esquerda {
+    text-align: left;
+}
+
+.meio {
+    text-align: justify;
+}
+
+#cards {
+    display: contents;
+}
+
+#cards li {
+    list-style: disc;
+}
+img {
+    width: 100%;
+    max-width: 380px;
+}
+
+.center {
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.w33 {
+    width: 33.33%;
+    padding: 0 10px;
+}
+
+.w50 {
+    padding: 0 2%;
+    width: 50%;
+}
+
+.left {
+    float: left;
+}
+
+.rigth {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #fde3c0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .col-12 {
+    padding: 0 30px;
+  }
+  .row {
+    margin: 0;
+  }
+  .container {
+    padding: 40px 0;
+  }
+  #about-area img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #about {
+    padding: 10px 40px;
+    background-color: #fbd49f;
+  }
+  #about h2{margin-top: 0px;
+  padding-top: 10px;}
+  p,
+  li {
+    list-style: none;
+    color: #444444;
+    font-size: 16px;
+  }
+
+  .bot-receita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #receita {
+    border: solid;
+    background-color: #8d1319;
+    text-decoration: none;
+    padding: 10px;
+    color: #fde3c0;
+    border-color: #8d1319;
+    cursor: pointer;
+  }
+  #receita:hover {
+    color: #ffc68f;
+    background-color: #c4141c;
+    border: solid #c4141c;
+    transition: all 0.6s;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 4px #272727;
+  }
+  .receita-area {
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  
+  #receita-topo {
+    margin-top: 100px;
+    padding: 0px;
+  }
+  #receita-topo p {
+    color: #444444;
+    font-size: 22px;
+    margin-bottom: 0px;
+  }
+  #titulo {
+    color: #c4141c;
+    padding-top: 100px;
+    margin-bottom: -20px;
+  }
+  
+  #cards {
+    display: contents;
+  }
+  #cards li {
+    list-style: disc;
+  }
+  .card-img-top {
+    width: 100%;
+    object-fit: cover;
+    height: 30vh;
+  }
+  
+  .card-body {
+    margin: 40px;
+    margin-bottom: 40px;
+    background-color: #f3f3f3;
+    border: #272626;
+  }
+  .card-body p {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .card-body:hover {
+    transform: scale(1.04);
+    box-shadow: 1px 1px 4px #495057;
+    transition: all 0.4s;
+  }
+  
+  .card-title {
+    color: #8d1319;
+    text-align: center;
+  }
+  
+  .card-span {
+    font-weight: bold;
+    text-align: center;
+    color: #8d1319;
+  }
+  
+  .main-title {
+    padding-top: 30px;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+  }
+  #bot-2 {
+    text-align: center;
+    padding: 40px;
+    margin-top: -40px;
+    background-color: white;
+  }
+  .c-item {
+    text-decoration: none;
+    padding: 0 40px;
+    height: 480px;
+  }
+  .c-img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .c-item a {
+    text-decoration: none;
+  }
+  .c-item h5:hover {
+    transform: scale(1.04);
+    transition: all 0.4s;
+  }
+  .c-item h5 {
+    color: #faebd7;
+    margin: 0;
+    font-size: 22px;
+    text-shadow: 1px 1px 1px #272626;
+  }
+  .c-item p {
+    font-size: 18px;
+    color: #faebd7;
+    text-shadow: 1px 1px 1px #272626;
+  }
+  .carousel-indicators li {
+    background-color: #ffffff;
+  }
+  .text-center {
+    color: #c4141c;
+  }
+  @media (max-width: 1440px) {
+    .receita-area {
+      margin: 0px;
+      padding: 0px;
+    }
+    #subs h5 {font-size: 2.0rem;
+      margin: 0px;
+    }
+    #subs h6{font-size: 1.65rem;}
+  }
+  @media (max-width: 1024px) {
+    .col-12 {
+      padding: 0 20px;
+    }
+    .container {
+      padding: 0px;
+    }
+  
+    .banner {
+      padding-bottom: 20px;
+      padding-top: 50px;
+    }
+    .titulo-banner {
+      text-align: center;
+    }
+    #about-list li {
+      margin-left: -40px;
+    }
+  
+    #dicas {
+      margin-top: -20px;
+      padding-top: -60px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  
+  
+    #about-area {
+      padding-top: -20px;
+    }
+  
+    #about-area img {
+      padding-top: 20px;
+      margin-bottom: 20px;
+    }
+    .main-title {
+      margin: 20px 0px;
+    }
+  
+    #bot-2 {
+      padding-top: 0px;
+    }
+    #dicas {
+      margin-bottom: 20px;
+      padding-bottom: 0px;
+    }
+    #dicas h3 {
+      margin: 0px;
+    }
+    #letter {
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    #cadastro {
+      padding-top: -20px;
+    }
+    #news-area {
+      padding: 12px;
+    }
+    .card-body {
+      margin: 10px;
+    }
+    .card-body:hover {
+      transform: scale(1.02);
+      box-shadow: 1px 1px 4px #495057;
+      transition: all 0.4s;
+    }
+    #titulo {
+      margin-bottom: 0;
+      padding-top: 120px;
+    }
+    #about-area img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+    .c-item {
+      padding: 0;
+      height: 420px;
+    }
+    #subs {
+      padding: 20px 0px;
+    }
+    #subs h5 {font-size: 2.0rem;
+      margin: 0px;
+    }
+    #subs h6{font-size: 1.65rem;}
+    #opniao {
+      padding: 0px 10px;
+    }
+    #bot-2 {
+      padding-top: 20px;
+    }
+    .col-md-4 {
+      padding: 0px;
+      margin: 0px;
+    }
+    .receita-area {
+      margin: 0px;
+      padding: 0 0px;
+    }
+    .card-body {
+      margin: 20 0px;
+    }
+    #media-bar {
+      margin-top: 30px;
+      margin-bottom: 0px;
+    }
+  }
+  @media (max-width: 768px) {
+    .col-12 {
+      padding: 0 20px;
+    }
+    .container {
+      padding: 0px;
+    }
+  
+    .banner {
+      padding-bottom: 20px;
+      padding-top: 50px;
+    }
+    .titulo-banner {
+      text-align: center;
+    }
+    #about-list li {
+      margin-left: -40px;
+    }
+    #about h2{margin-top: 0px;
+    padding-top: 10px;}
+    #dicas {
+      margin-top: -20px;
+      padding-top: -60px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    #dicas h3{font-size: 1.50rem;}
+    #about {
+      padding: 0px;
+    }
+    #about-area {
+      padding-top: -20px;
+    }
+  
+    #about-area img {
+      padding-top: 20px;
+      margin-bottom: 0px;
+    }
+    .main-title {
+      margin: 20px 0px;
+    }
+  
+    #bot-2 {
+      padding-top: 0px;
+    }
+    #dicas {
+      padding-top: 30px;
+      margin-bottom: 20px;
+      padding-bottom: 0px;
+    }
+    #dicas h3 {
+      margin: 0px;
+    }
+    #letter {
+      margin-top: 70px;
+      margin-bottom: 20px;
+    }
+    #cadastro {
+      padding-top: -20px;
+    }
+    #news-area {
+      padding-top: 20px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .card-body {
+      margin: 10px;
+    }
+    .card-body:hover {
+      transform: scale(1.02);
+      box-shadow: 1px 1px 4px #495057;
+      transition: all 0.4s;
+    }
+    #titulo {
+      margin-bottom: 0;
+      padding-top: 120px;
+    }
+    #about-area img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+    .c-item {
+      padding: 0;
+      height: 420px;
+    }
+    #subs {
+      padding: 20px 0px;
+    }
+    #subs h5 {font-size: 1.65rem;
+      margin: 0px;
+    }
+    #subs h6{font-size: 1.50rem;}
+    #opniao {
+      padding: 0px 10px;
+    }
+    #bot-2 {
+      padding-top: 20px;
+    }
+    #bot-2 h6{font-size: 1.65rem;
+    margin-top: 0px;}
+    #msg-box {
+      margin-top: 30px;
+    }
+    #contact-form {
+      margin-top: 30px;
+    }
+    .col-md-4 {
+      padding: 0px;
+      margin: 0px;
+    }
+    .receita-area {
+      margin: 0;
+      padding: 0 0px;
+    }
+    .card-body {
+      margin: 20 0px;
+    }
+    #contact-area h3{font-size: 2.0rem;}
+    #media-bar {
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .col-12 {
+      padding: 0 20px;
+    }
+    .container {
+      padding: 0px;
+    }
+  
+    .banner {
+      padding-bottom: 20px;
+      padding-top: 50px;
+    }
+    .titulo-banner {
+      text-align: center;
+    }
+    #about-list li {
+      margin-left: -40px;
+    }
+  
+    #dicas {
+      margin-top: -20px;
+      padding-top: -60px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  #about h2{margin-top: 0px;
+  padding-top: 10px;}
+    #about {
+      padding: 0px;
+    }
+    #about-area {
+      padding-top: -20px;
+    }
+  
+    #about-area img {
+      padding-top: 20px;
+      margin-bottom: 0px;
+    }
+    .main-title {
+      margin: 20px 0px;
+    }
+  
+    #bot-2 {
+      padding-top: 0px;
+    }
+    #dicas {
+      padding-top: 30px;
+      margin-bottom: 20px;
+      padding-bottom: 0px;
+    }
+    #dicas h3 {
+      font-size: 2rem;
+      margin: 0px;
+    }
+    #letter {
+      margin-top: 70px;
+      margin-bottom: 20px;
+    }
+    #cadastro {
+      padding-top: 0px;
+    }
+    #news-area {
+      padding-top: 20px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .card-body {
+      margin: 10px;
+    }
+    .card-body:hover {
+      transform: scale(1.02);
+      box-shadow: 1px 1px 4px #495057;
+      transition: all 0.4s;
+    }
+    #titulo {
+      margin-bottom: 0;
+      padding-top: 120px;
+    }
+    #about-area img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+    .c-item {
+      padding: 0;
+      height: 240px;
+    }
+    #subs {
+      padding: 20px 0px;
+    }
+    #subs h5 {font-size: 1.65rem;
+      margin: 0px;
+    }
+    #subs h6{font-size: 1.50rem;}
+    #opniao {
+      padding: 0px 10px;
+    }
+    #bot-2 {
+      padding-top: 20px;
+    }
+    #bot-2 h6{margin-top: 0px;
+      font-size: 1.5rem;}
+      #contact-area h3{font-size: 1.75rem;}
+    .col-md-4 {
+      padding: 0px;
+      margin: 0px;
+    }
+    .receita-area {
+      margin: 0;
+      padding: 0 0px;
+    }
+    .card-body {
+      margin: 20 0px;
+    }
+    #link-box {
+      padding: 30px;
+    }
+    .contact-box {
+      margin: 10px;
+    }
+    #media-bar {
+      margin-top: 30px;
+      margin-bottom: 0px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .col-12 {
+      padding: 0 20px;
+    }
+    .container {
+      padding: 0px;
+    }
+  
+    .banner {
+      padding-bottom: 20px;
+      padding-top: 50px;
+    }
+    .titulo-banner {
+      text-align: center;
+    }
+    #about-list li {
+      margin-left: -40px;
+    }
+  
+    #dicas {
+      margin-top: -20px;
+      padding-top: -60px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+   #about h2{margin-top: 0px;
+  padding-top: 10px;}
+    #about {
+      margin-bottom: 20px;
+      padding: 0px;
+    }
+    #about-area {
+      padding-top: -20px;
+    }
+  
+    #about-area img {
+      padding-top: 20px;
+      margin-bottom: 0px;
+    }
+    .main-title {
+      margin: 20px 0px;
+    }
+  
+    #bot-2 {
+      padding-top: 0px;
+    }
+    #dicas {
+      margin-bottom: 20px;
+      padding-bottom: 0px;
+    }
+    #dicas h3 {
+      margin: 0px;
+    }
+    #subs h5{padding: 0px;
+      margin: 0px;
+      font-size: 1.65rem;
+      margin: 20px;}
+      #subs h6{font-size: 1.50rem;}
+    #letter {
+      margin-top: 70px;
+      margin-bottom: 20px;
+    }
+    #cadastro {
+      padding-top: -20px;
+    }
+    #news-area {
+      padding-top: 20px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  
+    .card-body:hover {
+      transform: scale(1.02);
+      box-shadow: 1px 1px 4px #495057;
+      transition: all 0.4s;
+    }
+    #titulo {
+      margin-bottom: 0;
+      padding-top: 120px;
+    }
+    #about-area img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+    .c-item {
+      padding: 0;
+      height: 240px;
+    }
+    #subs {
+      padding: 20px 0px;
+    }
+  
+    #opniao {
+      padding: 0px 10px;
+    }
+    #bot-2 h6{font-size: 1.5rem;}
+    #bot-2 {
+      padding-top: 20px;
+    }
+    .col-md-4 {
+      padding: 0px;
+      margin: 0px;
+    }
+    .receita-area {
+      margin: 0px;
+      padding: 0 0px;
+    }
+    .card-body {
+      margin: 20 0px;
+    }
+    #link-box {
+      padding: 20px;
+    }
+    .contact-box {
+      margin: 10px;
+    }
+    #media-bar {
+      margin-top: 30px;
+      margin-bottom: 0px;
+    }
+    #receita-page {
+      padding: 10px;
+    }
+    #receita-topo h1 {
+      padding-top: 0;
+      margin-top: 0px;
+    }
+    #contact-area h3{font-size: 1.5rem;}
+  }
+  
+  @media (max-width: 320px) {
+    .col-12 {
+      padding: 0 20px;
+    }
+    .container {
+      padding: 0px;
+    }
+  
+    .banner {
+      padding-bottom: 20px;
+      padding-top: 100px;
+    }
+    .titulo-banner {
+      text-align: center;
+    }
+    #about-list li {
+      margin-left: -40px;
+    }
+  
+    #dicas {
+      margin-top: -20px;
+      padding-top: -60px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    #about h2{margin-top: 0px;
+    padding: 10px;}
+    #about {
+      padding: 0px;
+    }
+    #about-area {
+      padding-top: -30px;
+    }
+  
+    #about-area img {
+      padding-top: 20px;
+      margin-bottom: 20px;
+    }
+    .main-title {
+      margin: 20px 0px;
+    }
+  
+    #bot-2 {
+      padding-top: 0px;
+    }
+    #dicas {
+      margin-bottom: 20px;
+      padding-bottom: 0px;
+    }
+    #dicas h3 {
+      margin: 0px;
+    }
+  
+    #letter {
+      color: #444444;
+      margin-top: 100px;
+      margin-bottom: 20px;
+    }
+    #cadastro {
+      padding-top: -20px;
+    }
+    #news-area {
+      padding-top: 20px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .card-body {
+      margin: 10px;
+    }
+    .card-body:hover {
+      transform: scale(1.02);
+      box-shadow: 1px 1px 4px #495057;
+      transition: all 0.4s;
+    }
+    #titulo {
+      margin-bottom: 0;
+      padding-top: 120px;
+    }
+    #about-area img {
+      margin: 0;
+      max-width: 100%;
+      object-fit: cover;
+    }
+    .c-item {
+      padding: 0;
+      height: 240px;
+    }
+    #sobre {
+      margin-bottom: 30px;
+    }
+    #dicas h3 {
+      margin: 0px;
+    }
+    #subs {
+      padding: 20px 0px;
+    }
+    #subs h5 {
+      font-size: 1.25rem;
+      margin: 20px;
+    }
+    #subs h6 {
+      font-size: 1.5rem;
+    }
+    #opniao {
+      padding: 0px 10px;
+    }
+    #bot-2 {
+      padding-top: 20px;
+    }
+    #bot-2 h6 {padding: 10px;
+      font-size: 1.5rem;
+    }
+  #contact-area h3{font-size: 1.5rem;}
+    .col-md-4 {
+      padding: 0px;
+      margin: 0px;
+    }
+    #receita-page {
+      padding: 10px;
+    }
+    #receita-topo h1 {
+      margin-top: 20px;
+    }
+  
+    .receita-area {
+      margin: 0px;
+      padding: 0 0px;
+    }
+    .card-body {
+      margin: 20 0px;
+    }
+    #link-box {
+      padding: 20px;
+    }
+    .contact-box {
+      margin: 10px;
+    }
+    #media-bar {
+      margin-top: 30px;
+      margin-bottom: 0px;
+    }
+  }  

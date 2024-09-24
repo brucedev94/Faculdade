@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logotipo{
+    width: 50px; height: 50px;
+}
+
+.bg-preta{
+    background-color: black;
+}
+
+.bg-laranja{
+    background-color: rgb(255, 251, 39);
+    margin: auto;
+}
+
+.letra-branca{
+    color: white;
+    font-size: 20px;
+}
+
+.letra-preta{
+    color: black;
+    font-size: 20px;
+}
+
+.texto-centro{
+    text-align: center;
+}
+
+#menu-h{
+    list-style: none;
+    display: flex;
+}
+
+#direitos{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+#direitos2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.centro-img{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.centro-img2{
+    justify-content: flex-end;
+}
+
+.menu-m {
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+}
+
+.chao {
+    padding: 0 2%;
+}
+
